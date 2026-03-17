@@ -1,0 +1,13 @@
+#fff        -  High contrast text
+
+#2EF5FF     -  Buttons / highglights
+
+#4D9DA1     -  Container background
+
+#000000     -  Button text
+
+#005662     -  Primary background
+
+#EEFCFD     -  Lower contrast text option
+
+#E6F4F1     -  Lower contrast text option
