@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -17,4 +18,101 @@
 @font-face {
     font-family: "Nosifer-Regular";
     src: url(/fonts/Nosifer-Regular.woff2);
+}
+
+
+:root {
+    --text-high: #fff;
+    --accent: #2EF5FF;
+    --container-bg: #4D9DA1;
+    --btn-text: #000000;
+    --bg-primary: #005662;
+    --text-low-1: #EEFCFD;
+    --text-low-2: #E6F4F1;
+
+    --font-display: "Nosifer-Regular", sans-serif;
+    --font-heading: "HoltwoodOneSC-Regular", serif;
+    --font-body: "Mako-Regular", sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    overflow-x: clip;
+}
+
+span {
+    color: var(--accent);
+}
+
+.logo {
+    margin-right: auto;
+    font-family: "Nosifer-Regular", sans-serif;
+    color: var(--text-high);
+    padding: 1em;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--bg-primary);
+    flex-direction: row;
+    border-bottom: 1px solid var(--container-bg);
+    top: 0;
+    z-index: 10;
+    position: sticky;
+    min-width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-high);
+    font-family: "Nosifer-Regular", sans-serif;
+    font-size: 0.8em;
+}
+
+.hero, .about, .services {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    font-family: "Nosifer-Regular", sans-serif ;
+    font-weight: 700;
+    font-size: 7rem;
+    color: var(--text-high);
+}
+
+.tagline {
+    font-family: "Mako-Regular", sans-serif;
+    font-size: 1.8em;
+    color: var(--text-low-2);
+}
+
+.hero {
+    background: url(images/painting-class.webp) no-repeat fixed center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14em;
+    gap: 1em;
+}
+
+.cta-btn {
+    background-color: var(--accent);
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: 0.2em solid var(--container-bg);
+    text-decoration: none;
+    color: var(--btn-text);
+    font-family: "HoltwoodOneSC-Regular", serif;
 }
