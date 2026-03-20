@@ -43,7 +43,7 @@ body {
     overflow-x: clip;
 }
 
-span {
+.highlight {
     color: var(--accent);
 }
 
@@ -269,3 +269,67 @@ form select {
     cursor: pointer;
 }
 
+.feedback-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-bg);
+    gap: 1em;
+    padding: 2em;
+    border-radius: 1em;
+    border: 2px solid #fff;
+}
+
+.star-rating-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+}
+
+.checked {
+    color: var(--accent);
+}
+
+.feedback-page h1 {
+    font-family: var(--font-display);
+    color: var(--text-high);
+    font-size: 7em;
+}
+
+.feedback-container p, .feedback-page label {
+    font-family: var(--font-body);
+    color: var(--text-low-2);
+}
+
+.feedback-container textarea {
+    min-width: 254px;
+    min-height: 5em;
+    border-radius: 0.4em;
+}
+
+.feedback-container a {
+    text-decoration: none;
+    color: var(--btn-text);
+    font-family: var(--font-heading);
+    background-color: var(--accent);
+    padding: 1em 2em;
+    border-radius: 1em;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--btn-text);
+    }
+}
+
+.feedback-container h2 {
+    font-family: var(--font-body);
+    color: var(--text-low-2);
+    font-size: 1.8em;
+}
