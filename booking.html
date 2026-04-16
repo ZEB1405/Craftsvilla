@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsvilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Crafts<span class="highlight">villa</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+    <main class="booking-page">
+        <h1>BOO<span class="highlight">KING</span></h1>
+        <div class="form-container">
+            <form action="#">
+                <div class="form-field">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" name="visitor_email" id="email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Your Phone</label>
+                    <input type="tel" name="visitor_phone" id="phone" placeholder="+47 12345678" required>
+                </div>
+                <div class="form-field">
+                    <label for="booking-date">Date</label>
+                    <input type="date" name="booking-date" id="booking-date" required>
+                </div>
+                <div class="form-field">
+                    <label for="workshop">Select workshop</label>
+                    <select name="workshop-selection" id="workshop-selection">
+                        <option value="">Choose a workshop from the list</option>
+                        <option value="mosaic">Mosaic Painting</option>
+                        <option value="watercolor">Watercolor Painting</option>
+                        <option value="canvas">Canvas painting</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="message">Anything else?</label>
+                    <textarea name="visitor_message" id="message" placeholder="Tell us anything that might be important."></textarea>
+                </div>
+                <button type="submit">Book Workshop</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
